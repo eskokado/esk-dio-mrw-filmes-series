@@ -29,7 +29,11 @@ namespace DIO.Series
             retorno += "Título: " + this.titulo + Environment.NewLine;
             retorno += "Descrição: " + this.descricao + Environment.NewLine;
             retorno += "Ano: " + this.ano + Environment.NewLine;
-            retorno += "Excluido: " + this.excluido;
+            if (this.excluido) {
+                retorno += "Excluido: Sim";
+            } else {
+                retorno += "Excluido: Não";
+            }
 
             return retorno;
         }
